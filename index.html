@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Widget</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        #widget-content {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="widget-content">Hello World</div>
+    
+    <script>
+        // Basic widget initialization for 3DExperience
+        if (typeof widget !== 'undefined') {
+            widget.addEvent('onLoad', function() {
+                console.log('Hello World widget loaded');
+            });
+        }
+    </script>
+</body>
+</html>
